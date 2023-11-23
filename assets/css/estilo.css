@@ -1,0 +1,285 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-responsive {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Banner */
+.inicio {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contenido-banner img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.contenido-banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contenido-banner h2 {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* Sobre Mí */
+.sobremi {
+    padding: 80px 0;
+}
+
+.contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Intereses */
+.contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interes i {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Educación */
+.educacion {
+    margin-top: 40px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #333;
+}
+
+.redes-sociales img {
+    margin-bottom: 10px;
+}
+
+/* Curriculum */
+.curriculum {
+    padding: 80px 0;
+}
+
+.izquierda, .derecha {
+    flex: 1;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.izq h4, .der h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.circuloi, .circulod {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.conectori, .conectord {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% - 40px);
+    background-color: #333;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 80px 0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.mapa img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+}
